@@ -1,9 +1,12 @@
 import React from 'react'
+import { ThemeButton } from '../import'
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
 	return (
-		<div>Navbar</div>
+		<div>Navbar
+			<ThemeButton />
+		</div>
 	)
 }
 
