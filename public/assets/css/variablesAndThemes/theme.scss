@@ -1,6 +1,8 @@
 body {
     /* variable colors */
     --primary-000: var(--neutral-light-000);
+    --primary-100: var(--orange);
+    --primary-200: var(--green);
 
     /* secondary */
     --secondary-000: var(--purple);
@@ -23,7 +25,9 @@ body {
 
     &.dark {
         /* variable colors */
-        --primary-000: var(--dark-blue);
+        --primary-000: var(--black);
+        --primary-100: var(--orange);
+        --primary-200: var(--green);
 
         /* secondary */
         --secondary-000: var(--purple);

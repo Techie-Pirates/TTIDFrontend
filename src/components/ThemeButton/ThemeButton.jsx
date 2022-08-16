@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import styles from "./ThemeButton.module.scss";
 
-const DEFAULT_THEME = process.env.REACT_APP_default_theme;
+const DEFAULT_THEME = process.env.NEXT_PUBLIC_DEFAULT_THEME;
 const ThemeButton = () => {
 	const themeBtnRef = useRef(null);
 	const [theme, setTheme] = useState(null);
@@ -25,14 +25,14 @@ const ThemeButton = () => {
 		if (theme) {
 			const toggledTheme = theme === "light" ? "dark" : "light";
 			localStorage.setItem("theme", toggledTheme);
-			document.body.classList.remove(theme);
+			document.querySelector("body").classList.remove(theme);
 			setTheme(toggledTheme);
 			document.body.classList.add(toggledTheme);
 		} else {
 			const toggledTheme = DEFAULT_THEME === "light" ? "dark" : "light";
 			localStorage.setItem("theme", toggledTheme);
-			document.body.classList.remove(DEFAULT_THEME);
-			document.body.classList.add(toggledTheme);
+			document.querySelector("body").classList.remove(DEFAULT_THEME);
+			document.querySelector("body").classList.add(toggledTheme);
 			setTheme(toggledTheme);
 		}
 	};

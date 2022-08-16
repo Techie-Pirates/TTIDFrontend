@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   swcMinify: true,
+  env: {
+    DEFAULT_THEME: process.env.DEFAULT_THEME
+  }
 }
 
 module.exports = nextConfig

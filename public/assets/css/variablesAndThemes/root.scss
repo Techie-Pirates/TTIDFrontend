@@ -9,11 +9,24 @@
     --pink: rgb(218, 102, 141);
     --green: #43BA96;
     --dark-blue: #0E1218;
+    --black: #0F0F0F;
+    --orange: #E25932;
+
+    /* Font weight */
+    --font-light: 500;
+    --font-bold: 600;
+    --font-bolder: 700;
 
     /* padding */
     --pd-container: 60px;
     --pd-container-tab: 30px;
     --pd-container-sm: 16px;
+
+    /* neutral */
+    --neutral-light-000: #ffff;
+    --neutral-light-100: rgb(240, 240, 240);
+    --neutral-light-200: rgb(221, 221, 221);
+    --neutral-light-300: #525252;
 
     /* break points */
     --break-point-desktop: 1400px;

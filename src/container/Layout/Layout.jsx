@@ -5,11 +5,11 @@ import styles from './Layout.module.scss'
 
 const Layout = (props) => {
 	return (
-		<>
+		<div className={styles.Main_container}>
 			<Navbar />
 			<div className={styles.Layout}>{props.children}</div>
 			<Footer />
-		</>
+		</div>
 	)
 }
 

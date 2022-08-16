@@ -5,7 +5,7 @@ import "../public/assets/css/utils.scss";
 import { useEffect } from "react";
 import { Layout } from "../src/container/import";
 
-const DEFAULT_THEME = process.env.REACT_APP_default_theme;
+const DEFAULT_THEME = process.env.NEXT_PUBLIC_DEFAULT_THEME;
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setTheme();
@@ -13,10 +13,10 @@ function MyApp({ Component, pageProps }) {
 
   const setTheme = () => {
     const theme = localStorage.getItem("theme");
-    if (theme) {
-      document.body.classList.add(theme);
+    if (theme && theme !== undefined && theme !== 'undefined') {
+      document.querySelector("body").classList.add(theme);
     } else {
-      document.body.classList.add(process.env.DEFAULT_THEME);
+      document.querySelector("body").classList.add(DEFAULT_THEME);
       localStorage.setItem("theme", DEFAULT_THEME);
     }
   };
