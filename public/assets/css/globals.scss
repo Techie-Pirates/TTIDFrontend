@@ -38,7 +38,8 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden !important;
     overflow-y: auto !important;
-    padding-top: var(--nav-height);
+    background: var(--primary-000);
+    color: var(--txt-000);
 
     @media screen and (max-width: var(break-point-tab)) {
         padding-top: var(nav-height-sm);
