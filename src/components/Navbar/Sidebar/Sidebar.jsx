@@ -7,7 +7,8 @@ import { BiLogOut } from "react-icons/bi"
 import { MdManageAccounts, MdPeopleAlt } from "react-icons/md"
 import { RiDashboardFill } from "react-icons/ri"
 import { BsBookmarkStarFill } from "react-icons/bs"
-import { AiOutlineCalendar } from "react-icons/ai"
+import { AiOutlineCalendar, AiOutlineClose } from "react-icons/ai"
+import { CgClose } from "react-icons/cg"
 
 const Sidebar = ({ avatarRef, setSidebarOpen }) => {
 	const sidebarRef = useRef(null);
@@ -26,7 +27,7 @@ const Sidebar = ({ avatarRef, setSidebarOpen }) => {
 	return (
 		<div ref={sidebarRef} className={styles.Sidebar_container}>
 			<div className={styles.close_sidebar} onClick={() => setSidebarOpen(false)}>
-				<FaChevronLeft />
+				<CgClose />
 			</div>
 			<div className={styles.user_info}>
 				<div className={styles.avatar}>

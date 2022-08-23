@@ -10,7 +10,7 @@ const Navbar = () => {
 	const navbarRef = useRef(null);
 	const avatarRef = useRef(null);
 	const [data, setData] = useState();
-	const [sidebarOpen, setSidebarOpen] = useState(true);
+	const [sidebarOpen, setSidebarOpen] = useState(false);
 	const [isAuthenticated, setIsAuthenticated] = useState(true);
 
 	const controlNavbar = () => {
