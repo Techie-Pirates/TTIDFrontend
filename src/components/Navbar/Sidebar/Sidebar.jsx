@@ -7,7 +7,7 @@ import { BiLogOut } from "react-icons/bi"
 import { MdManageAccounts, MdPeopleAlt } from "react-icons/md"
 import { RiDashboardFill } from "react-icons/ri"
 import { BsBookmarkStarFill } from "react-icons/bs"
-import { AiOutlineCalendar, AiOutlineClose } from "react-icons/ai"
+import { AiOutlineCalendar } from "react-icons/ai"
 import { CgClose } from "react-icons/cg"
 
 const Sidebar = ({ avatarRef, setSidebarOpen }) => {
@@ -45,11 +45,12 @@ const Sidebar = ({ avatarRef, setSidebarOpen }) => {
 						<div>Dashboard</div>
 					</div>
 				</Link>
-				<div className={styles.link} onClick={() => setSidebarOpen(false)}>
-					<AiOutlineCalendar />
-					<div>Calendar</div>
-				</div>
-
+				<Link href='/calendar'>
+					<div className={styles.link} onClick={() => setSidebarOpen(false)}>
+						<AiOutlineCalendar />
+						<div>Calendar</div>
+					</div>
+				</Link>
 				<div className={styles.link} onClick={() => setSidebarOpen(false)}>
 					<MdPeopleAlt />
 					<div>Friends</div>
