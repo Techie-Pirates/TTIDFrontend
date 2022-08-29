@@ -1,8 +1,7 @@
 import React, { useRef, useEffect } from 'react'
-import LimitChar from '../../LimitChar/LimitChar'
+import LimitChar from '../../UI/LimitChar/LimitChar'
 import Link from 'next/link'
 import styles from './Sidebar.module.scss'
-import { FaChevronLeft } from "react-icons/fa"
 import { BiLogOut } from "react-icons/bi"
 import { MdManageAccounts, MdPeopleAlt } from "react-icons/md"
 import { RiDashboardFill } from "react-icons/ri"
@@ -39,7 +38,7 @@ const Sidebar = ({ avatarRef, setSidebarOpen }) => {
 				</div>
 			</div>
 			<div className={styles.links}>
-				<Link href='/dashboard'>
+				<Link href='/dashboard/events'>
 					<div className={styles.link + " " + styles.xl} onClick={() => setSidebarOpen(false)}>
 						<RiDashboardFill />
 						<div>Dashboard</div>

@@ -39,9 +39,15 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     background: var(--primary-000);
-    color: var(--txt-000);
+    color: var(--txt-100);
 
     @media screen and (max-width: var(break-point-tab)) {
         padding-top: var(nav-height-sm);
     }
+}
+
+.App {
+    min-height: calc(100vh - var(--nav-height));
+    display: flex;
+    flex-direction: column;
 }

@@ -1,0 +1,59 @@
+.Profile_container {
+    display: flex;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    min-height: 100%;
+
+    .title {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .profile {
+        width: 30%;
+
+        .user_info {
+            display: flex;
+
+            .avatar {
+                img {
+                    width: 7rem;
+                    height: 7rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            .info {
+                margin-left: 2rem;
+                padding-top: .5rem;
+                width: 20rem;
+
+                .name {
+                    font-size: 1.6rem;
+                    font-weight: var(--font-bold);
+                    color: var(--txt-100);
+                    margin-bottom: .5rem;
+                }
+
+                .subTitle {
+                    color: var(--neutral-light-300);
+                    font-weight: var(--font-bold);
+                    font-size: 1.3rem;
+                }
+            }
+
+
+        }
+    }
+
+    .stats {
+        width: 30%;
+    }
+
+    .skills {
+        width: 40%;
+    }
+
+}

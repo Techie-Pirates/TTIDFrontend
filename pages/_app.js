@@ -3,7 +3,7 @@ import "../public/assets/css/variablesAndThemes/theme.scss";
 import "../public/assets/css/globals.scss";
 import "../public/assets/css/utils.scss";
 import { useEffect } from "react";
-import { Layout } from "../src/container/import";
+import { Footer, Navbar } from "../src/components/import";
 
 const DEFAULT_THEME = process.env.NEXT_PUBLIC_DEFAULT_THEME;
 function MyApp({ Component, pageProps }) {
@@ -21,9 +21,20 @@ function MyApp({ Component, pageProps }) {
     }
   };
 
-  return (<Layout>
-    <Component {...pageProps} />
-  </Layout>)
+  const Layout = Component.Layout || EmptyLayout;
+
+  return (
+    <div className="App">
+      <Navbar />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      <Footer />
+    </div>
+
+  )
 }
 
 export default MyApp
+
+const EmptyLayout = ({ children }) => <>{children}</>
