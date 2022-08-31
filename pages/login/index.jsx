@@ -7,7 +7,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 const Login = () => {
   return (
-    <div className={styles.Main_container + " " + "container"}>
+    <div className={styles.Main_container}>
       <div className={styles.left_container}></div>
       <div className={styles.right_container}>
         <div className={styles.login_container}>

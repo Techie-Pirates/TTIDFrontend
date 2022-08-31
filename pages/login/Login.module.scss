@@ -1,11 +1,12 @@
 .Main_container {
   display: flex;
-  background-color: red;
+
   .left_container {
     background-color: #bfbfbf;
     flex: 5;
     height: calc(100vh - var(--nav-height));
   }
+
   .right_container {
     flex: 7;
     background-color: #000000;
@@ -42,9 +43,11 @@
     padding: 0.5rem;
     font-size: 1.5rem;
   }
+
   ::placeholder {
     color: #bfbfbf;
   }
+
   button {
     background-color: #bfbfbf;
     border: none;
@@ -77,8 +80,9 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .icons_container {
-  }
+
+  .icons_container {}
+
   .icons {
     margin: 1rem;
     margin-left: 0;
@@ -87,6 +91,7 @@
     border-radius: 3px;
     background: white;
   }
+
   .icons:first {
     margin-left: 0px;
   }
