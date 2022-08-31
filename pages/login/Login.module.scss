@@ -15,6 +15,19 @@
     align-items: center;
   }
 
+  .error_container {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+
+  .close_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e74c3c;
+  }
+
   .login_container {
     display: flex;
     flex-direction: column;
@@ -41,24 +54,46 @@
     background-color: #f8f8f8;
     padding: 0.5rem;
     font-size: 1.5rem;
+
+    &:hover {
+      outline: 2px solid grey;
+    }
+
+    &:focus {
+      outline: 2px solid grey;
+    }
   }
   ::placeholder {
     color: #bfbfbf;
   }
   button {
     background-color: #bfbfbf;
-    border: none;
+    border: 1px solid #bfbfbf;
     border-radius: 3px;
-    color: white;
+    color: black;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    &:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+  .links_container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .link {
     text-decoration: underline;
     font-size: 1.2rem;
+    &:hover {
+      color: white;
+    }
   }
 
   .hr_container {
@@ -85,7 +120,12 @@
     padding: 5px;
     color: black;
     border-radius: 3px;
-    background: white;
+    background: #b8b8b8;
+    &:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
   }
   .icons:first {
     margin-left: 0px;
