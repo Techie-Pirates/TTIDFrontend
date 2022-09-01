@@ -69,7 +69,14 @@ const Login = () => {
         pauseOnHover
         closeButton={CloseButton}
       />
-      <div className={styles.left_container}></div>
+      <div className={styles.left_container}>
+        <div className={styles.left_inner_container}>
+          <h1>Dev.Env</h1>
+          <h2>One Stop</h2>
+          <h3>for</h3>
+          <h2>Coders.</h2>
+        </div>
+      </div>
       <div className={styles.right_container}>
         <div className={styles.login_container}>
           <h3>Welcome Back!👏</h3>
