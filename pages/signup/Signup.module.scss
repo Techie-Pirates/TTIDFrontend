@@ -1,12 +1,12 @@
 .Main_container {
   display: flex;
   background-color: red;
-  .left_container {
+  .right_container {
     background-color: #bfbfbf;
     flex: 5;
     height: calc(100vh - var(--nav-height));
   }
-  .right_container {
+  .left_container {
     flex: 7;
     background-color: #000000;
     color: #bfbfbf;
@@ -28,7 +28,7 @@
     color: #e74c3c;
   }
 
-  .login_container {
+  .signup_container {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -55,7 +55,7 @@
     border-radius: 3px;
     background-color: #f8f8f8;
     padding: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
     &:hover {
       outline: 2px solid grey;
@@ -65,12 +65,6 @@
       outline: 2px solid grey;
     }
   }
-
-  .password_text_container {
-    display: flex;
-    justify-content: space-between;
-  }
-
   ::placeholder {
     color: #bfbfbf;
   }
@@ -84,6 +78,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
+
     &:hover {
       background-color: white;
       color: black;
@@ -91,7 +86,7 @@
     }
   }
 
-  .signup_container {
+  .login_container {
     border: 1px solid #bfbfbf;
     border-radius: 3px;
     text-align: center;
@@ -101,9 +96,9 @@
     &:hover {
       border: 1px solid white;
     }
-
     p {
       display: inline;
+      font-size: 1.3rem;
       margin-right: 5px;
     }
   }
@@ -111,7 +106,6 @@
   .link {
     font-size: 1.3rem;
     color: white;
-
     &:hover {
       color: #b8b8b8;
       text-decoration: underline;
@@ -134,7 +128,7 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .other_login_container {
+  .other_signup_container {
     text-align: center;
 
     .icons_container {
@@ -147,7 +141,6 @@
         color: black;
         border-radius: 3px;
         background: #b8b8b8;
-
         &:hover {
           background-color: black;
           color: white;
@@ -156,6 +149,7 @@
       }
     }
   }
+
   .company_info_container {
     border: 1px solid #b8b8b8;
     border-radius: 3px;
