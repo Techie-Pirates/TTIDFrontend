@@ -5,6 +5,7 @@ const Devmates = () => {
 	return (
 		<div className={styles.Devmates}>
 			<div className={styles.title}>Devmates</div>
+			
 		</div>
 	)
 }
