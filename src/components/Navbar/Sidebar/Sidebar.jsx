@@ -38,7 +38,7 @@ const Sidebar = ({ avatarRef, setSidebarOpen }) => {
 				</div>
 			</div>
 			<div className={styles.links}>
-				<Link href='/dashboard/events'>
+				<Link href='/dashboard'>
 					<div className={styles.link + " " + styles.xl} onClick={() => setSidebarOpen(false)}>
 						<RiDashboardFill />
 						<div>Dashboard</div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import LimitChar from '../../components/UI/LimitChar/LimitChar'
+import LimitChar from '../../../components/UI/LimitChar/LimitChar'
 import styles from "./Profile.module.scss"
 import { BsFillGearFill, BsCalendarCheckFill } from "react-icons/bs"
 import { AiFillTool } from "react-icons/ai";
