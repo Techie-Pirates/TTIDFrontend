@@ -1,5 +1,7 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 .Dashboard {
-    min-height: calc(100vh - 2 * var(--nav-height));
+    min-height: calc(100vh - 2 * $nav-height);
 
     .bottom_container {
         padding-top: 3rem;
@@ -21,7 +23,7 @@
 
                 .link {
                     color: #646464;
-                    font-weight: var(--font-bold);
+                    font-weight: $font-bold;
                     cursor: pointer;
                     padding: .5rem .8rem;
                     text-align: center;

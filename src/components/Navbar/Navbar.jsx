@@ -15,21 +15,29 @@ const Navbar = () => {
 
 	const controlNavbar = () => {
 		const nav_height = navbarRef.current?.offsetHeight;
+		const allStickyTop = document.querySelectorAll(".sticky-top");
 		if (window.scrollY > lastScrollY && window.scrollY > nav_height) {
 			setShow(false);
+			allStickyTop.forEach((sticky) => {
+				sticky.style.top = 2 + "rem";
+			})
 		} else {
 			setShow(true);
+			const sticky = document.querySelector(".sticky-top");
+			allStickyTop.forEach((sticky) => {
+				sticky.style.top = `calc(${nav_height + "px"} + 2rem)`;
+			})
 		}
 		setLastScrollY(window.scrollY);
 
 	};
 
-	useEffect(() => {
-		axios.get(`local/getImage`).then((res) => {
-			console.log(res.data);
-			setData(res.data);
-		})
-	}, [data])
+	// useEffect(() => {
+	// 	axios.get(`local/getImage`).then((res) => {
+	// 		console.log(res.data);
+	// 		setData(res.data);
+	// 	})
+	// }, [data])
 
 	useEffect(() => {
 		const nav_height = navbarRef.current?.offsetHeight;

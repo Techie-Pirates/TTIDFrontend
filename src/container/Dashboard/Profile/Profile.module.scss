@@ -1,3 +1,5 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 .Profile_container {
     display: flex;
     gap: 2rem;
@@ -8,7 +10,7 @@
     .title {
         font-size: 2rem;
         margin-bottom: 3rem;
-        font-weight: var(--font-bold);
+        font-weight: $font-bold;
     }
 
     .profile {
@@ -33,14 +35,14 @@
 
                 .name {
                     font-size: 1.6rem;
-                    font-weight: var(--font-bold);
+                    font-weight: $font-bold;
                     color: var(--txt-100);
                     margin-bottom: .5rem;
                 }
 
                 .subTitle {
                     color: var(--neutral-light-300);
-                    font-weight: var(--font-bold);
+                    font-weight: $font-bold;
                     font-size: 1.3rem;
                 }
             }

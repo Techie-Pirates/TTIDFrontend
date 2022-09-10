@@ -1,0 +1,74 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
+.Feed {
+    width: 100%;
+    max-width: 65rem;
+    min-width: 40rem;
+
+    @media screen and (max-width: $break-point-mobile) {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .top_nav {
+        background: var(--txt-400);
+        border-radius: $br-0;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        z-index: $z-subnav;
+
+        .nav_link {
+            font-size: 1.4rem;
+            color: var(--txt-300);
+            font-weight: $font-bold;
+            cursor: pointer;
+            padding: .5rem 1rem;
+            text-align: center;
+            width: max-content;
+
+            &:hover {
+                color: var(--txt-200);
+            }
+
+            &.active {
+                color: var(--txt-200);
+                background: var(--primary-200);
+                border-radius: $br-0;
+            }
+        }
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .scroll_to_top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            cursor: pointer;
+            height: 4rem;
+            width: 4rem;
+            background: var(--txt-400);
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: .2s ease;
+
+            svg {
+                font-size: 1.6rem;
+                color: var(--txt-000);
+            }
+
+            &.active {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

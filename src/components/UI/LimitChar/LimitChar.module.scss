@@ -1,3 +1,5 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 .limit_char_container {
     position: relative;
     width: max-content;
@@ -37,7 +39,7 @@
         color: var(--dark-blue);
         z-index: 2000;
 
-        @media screen and (max-width: var(break-point-mobile)) {
+        @media screen and (max-width: $break-point-mobile) {
             display: none;
         }
     }

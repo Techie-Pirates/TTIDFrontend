@@ -1,10 +1,12 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 .Main_container {
   display: flex;
 
   .left_container {
     background-color: #bfbfbf;
     flex: 5;
-    height: calc(100vh - var(--nav-height));
+    height: calc(100vh - $nav-height);
   }
 
   .right_container {
@@ -81,6 +83,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+
     &:hover {
       background-color: white;
       color: black;
@@ -96,6 +99,7 @@
   .link {
     text-decoration: underline;
     font-size: 1.2rem;
+
     &:hover {
       color: white;
     }
@@ -127,6 +131,7 @@
     color: black;
     border-radius: 3px;
     background: #b8b8b8;
+
     &:hover {
       background-color: black;
       color: white;

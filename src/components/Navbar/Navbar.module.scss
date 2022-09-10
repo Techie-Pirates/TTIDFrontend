@@ -1,24 +1,27 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 .Navbar_container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--nav-height);
+    height: $nav-height;
     background-color: #222222;
     color: var(--txt-000);
     display: flex;
     align-items: center;
     font-size: 1.4rem;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
+    z-index: $z-navbar;
 
     &.hide {
         top: -100%;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     &.active {
         top: 0;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .links_container {
@@ -48,7 +51,7 @@
         margin-left: auto;
         width: 400px;
         height: max-content;
-        border-radius: var(--br-0);
+        border-radius: $br-0;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -86,7 +89,7 @@
                 // background: var(--primary-200);
                 border: 2px solid var(--txt-400);
                 padding: 7px 20px;
-                border-radius: var(--br-0);
+                border-radius: $br-0;
                 cursor: pointer;
             }
         }
