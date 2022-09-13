@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './blog.module.scss'
 
-const index = () => {
+const Blog = () => {
 	return (
-		<div>index</div>
+		<div>blog</div>
 	)
 }
 
-export default index
+export default Blog
