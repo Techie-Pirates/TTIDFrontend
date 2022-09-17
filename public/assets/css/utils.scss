@@ -1,3 +1,5 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 a {
     text-decoration: none;
     color: unset;
@@ -29,13 +31,20 @@ img {
 }
 
 .container {
-    padding: 0px var(--pd-container);
+    padding: 0px $pd-container;
 
-    @media screen and (max-width: var(--break-point-tab)) {
-        padding: 0px var(--pd-container-tab);
+    @media screen and (max-width: $break-point-tab) {
+        padding: 0px $pd-container-tab;
     }
 
-    @media screen and (max-width: var(--break-point-mobile)) {
-        padding: 0px var(--pd-container-sm);
+    @media screen and (max-width: $break-point-mobile) {
+        padding: 0px $pd-container-sm;
     }
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+    transition: .2s all ease;
 }

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import HomePage from '../src/container/HomePage/HomePage';
 
 export default function Home() {
   return (
@@ -10,10 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        main
-      </div>
-
+      <HomePage />
 
     </div>
   )
