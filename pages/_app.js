@@ -4,16 +4,17 @@ import "../public/assets/css/globals.scss";
 import "../public/assets/css/utils.scss";
 import { useEffect } from "react";
 import { Footer, Navbar } from "../src/components/import";
+import { SessionProvider } from "next-auth/react";
 
 const DEFAULT_THEME = process.env.NEXT_PUBLIC_DEFAULT_THEME;
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, session }) {
   useEffect(() => {
     setTheme();
   }, []);
 
   const setTheme = () => {
     const theme = localStorage.getItem("theme");
-    if (theme && theme !== undefined && theme !== 'undefined') {
+    if (theme && theme !== undefined && theme !== "undefined") {
       document.querySelector("body").classList.add(theme);
     } else {
       document.querySelector("body").classList.add(DEFAULT_THEME);
@@ -24,17 +25,18 @@ function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || EmptyLayout;
 
   return (
-    <div className="App">
-      <Navbar />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-      <Footer />
-    </div>
-
-  )
+    <SessionProvider session={session}>
+      <div className="App">
+        <Navbar />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+        <Footer />
+      </div>
+    </SessionProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
 
-const EmptyLayout = ({ children }) => <>{children}</>
+const EmptyLayout = ({ children }) => <>{children}</>;
