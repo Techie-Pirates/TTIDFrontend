@@ -1,8 +1,8 @@
 import NextAuth from "next-auth";
-import AppleProvider from "next-auth/providers/apple";
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import LinkedInProvider from "next-auth/providers/linkedin";
+import TwitterProvider from "next-auth/providers/twitter";
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -23,6 +23,7 @@ export const authOptions = {
       clientId: process.env.TWITTER_CLIENT_ID,
       clientSecret: process.env.TWITTER_CLIENT_SECRET,
     }),
+
     // ...add more providers here
   ],
   secret: process.env.JWT_SECRET,

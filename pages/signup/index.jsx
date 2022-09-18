@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Signup.module.scss";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
-import { BsApple, BsGithub } from "react-icons/bs";
+import { BsTwitter, BsGithub } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 import { ToastContainer, toast } from "react-toastify";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -179,7 +179,7 @@ const Login = () => {
             <label>Signup using</label>
             <div className={styles.icons_container}>
               <FcGoogle className={styles.icons} size={"3.5rem"} />
-              <BsApple className={styles.icons} size={"3.5rem"} />
+              <BsTwitter className={styles.icons} size={"3.5rem"} />
               <GrLinkedinOption className={styles.icons} size={"3.5rem"} />
               <BsGithub className={styles.icons} size={"3.5rem"} />
             </div>
