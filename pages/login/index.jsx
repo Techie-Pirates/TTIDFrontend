@@ -141,7 +141,7 @@ const Login = () => {
             <div className={styles.signup_container}>
               <p>New to Dev.Env?</p>
               <Link href="/signup">
-                <a className={styles.link}>Create an account .</a>
+                <a className={styles.link}>Create an account.</a>
               </Link>
             </div>
             <div className={styles.hr_container}>
