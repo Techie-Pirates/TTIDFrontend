@@ -22,7 +22,7 @@
                 margin-bottom: 2rem;
 
                 .link {
-                    color: #646464;
+                    color: var(--txt-200);
                     font-weight: $font-bold;
                     cursor: pointer;
                     padding: .5rem .8rem;
@@ -30,11 +30,11 @@
                     width: max-content;
 
                     &:hover {
-                        color: var(--txt-200);
+                        color: var(--txt-000);
                     }
 
                     &.active {
-                        color: var(--txt-200);
+                        color: var(--txt-000);
                         border-bottom: 3px solid var(--primary-200);
                     }
                 }

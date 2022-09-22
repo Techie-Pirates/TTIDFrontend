@@ -102,13 +102,13 @@
             font-size: 1.4rem;
             margin-bottom: .5rem;
             cursor: pointer;
-            color: var(--neutral-light-300);
+            color: var(--txt-200);
             padding: 1rem 1.5rem;
             border-radius: 1rem;
 
             &:hover {
-                background: var(--neutral-light-500);
-                color: var(--txt-100);
+                background: var(--txt-400);
+                color: var(--txt-000);
             }
 
             svg {
