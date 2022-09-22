@@ -14,15 +14,11 @@ const LimitChar = ({
     <div
       className={
         classes.limit_char_container +
-        " " +
-        `${
-          className
-            ? className
-            : " " + " " + `${fitContent ? classes.noMax : ""}`
+        ` ${className
+          ? className
+          : " " + " " + `${fitContent ? classes.noMax : ""}`
         }` +
-        " " +
-        `${
-          hoverhide ? "" : word?.length > limit ? classes.limit_char_hover : ""
+        ` ${hoverhide ? "" : word?.length > limit ? classes.limit_char_hover : ""
         }`
       }
       styles={{ ...styles }}

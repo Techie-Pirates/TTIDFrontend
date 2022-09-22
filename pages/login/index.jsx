@@ -57,18 +57,6 @@ const Login = () => {
 
   return (
     <div className={styles.Main_container + " " + "container"}>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        closeButton={CloseButton}
-      />
       <div className={styles.left_container}></div>
       <div className={styles.right_container}>
         <div className={styles.login_container}>

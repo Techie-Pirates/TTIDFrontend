@@ -1,11 +1,14 @@
+@import "/public/assets/css/variablesAndThemes/variables.scss";
+
 .Main_container {
   display: flex;
-  background-color: red;
+
   .left_container {
     background-color: #bfbfbf;
     flex: 5;
-    height: calc(100vh - var(--nav-height));
+    height: calc(100vh - $nav-height);
   }
+
   .right_container {
     flex: 7;
     background-color: #000000;
@@ -65,9 +68,11 @@
       outline: 2px solid grey;
     }
   }
+
   ::placeholder {
     color: #bfbfbf;
   }
+
   button {
     background-color: #bfbfbf;
     border: 1px solid #bfbfbf;
@@ -78,6 +83,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+
     &:hover {
       background-color: white;
       color: black;
@@ -93,6 +99,7 @@
   .link {
     text-decoration: underline;
     font-size: 1.2rem;
+
     &:hover {
       color: white;
     }
@@ -114,8 +121,9 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .icons_container {
-  }
+
+  .icons_container {}
+
   .icons {
     margin: 1rem;
     margin-left: 0;
@@ -123,12 +131,14 @@
     color: black;
     border-radius: 3px;
     background: #b8b8b8;
+
     &:hover {
       background-color: black;
       color: white;
       cursor: pointer;
     }
   }
+
   .icons:first {
     margin-left: 0px;
   }
