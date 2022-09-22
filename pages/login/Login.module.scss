@@ -9,6 +9,7 @@
     // height: calc(100vh - var(--nav-height));
     height: calc(100vh - 70px);
     background-image: url("../../public/assets/images/login_page_background_image.jpg");
+
     .left_inner_container {
       margin-top: 25%;
       margin-left: 1rem;
@@ -75,63 +76,62 @@
     }
 
     label {
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.7rem;
       font-size: 1.4rem;
     }
 
     input {
       margin-bottom: 1.5rem;
-      border: 1px solid #bfbfbf;
+      // border: 1px solid #bfbfbf;
+      border: none;
+      outline: none;
       border-radius: 3px;
-      background-color: #f8f8f8;
-      padding: 0.5rem;
-      font-size: 1.5rem;
+      color: var(--txt-100);
+      background-color: var(--txt-400);
+      padding: 0.6rem 1rem;
+      font-size: 1.4rem;
 
       ::placeholder {
         color: #bfbfbf;
-      }
-
-      &:hover {
-        outline: 2px solid grey;
-      }
-
-      &:focus {
-        outline: 2px solid grey;
       }
     }
 
     .password_text_container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.7rem;
+      font-size: 1.4rem;
+
+      a {
+        font-size: 1.1rem;
+        color: var(--primary-300);
+      }
     }
 
     button {
-      background-color: #bfbfbf;
-      border: 1px solid #bfbfbf;
-      border-radius: 3px;
+      background-color: var(--primary-200);
+      border-radius: $br-0;
       color: black;
       font-size: 1.5rem;
       text-align: center;
       padding-top: 1rem;
       padding-bottom: 1rem;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
+      color: var(--txt-100);
+      margin-top: 1rem;
+
       &:hover {
-        background-color: white;
-        color: black;
+        background-color: var();
         cursor: pointer;
       }
     }
 
     .signup_container {
-      border: 1px solid #bfbfbf;
       border-radius: 3px;
       text-align: center;
       font-size: 1.3rem;
       padding: 1rem;
-
-      &:hover {
-        border: 1px solid white;
-      }
 
       p {
         display: inline;
@@ -140,12 +140,8 @@
 
       .link {
         font-size: 1.3rem;
-        color: white;
+        color: var(--primary-300);
 
-        &:hover {
-          color: #b8b8b8;
-          text-decoration: underline;
-        }
       }
     }
 
@@ -159,7 +155,7 @@
       hr {
         display: inline-block;
         border: 0;
-        border-top: 1px solid #b8b8b8;
+        border: 1px solid var(--txt-400);
         width: 50%;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -178,31 +174,29 @@
           padding: 5px;
           color: black;
           border-radius: 3px;
-          background: #b8b8b8;
+          background: var(--txt-300);
 
           &:hover {
             background-color: black;
-            color: white;
+            border: 1px solid var(--txt-100);
+            color: var(--txt-100);
             cursor: pointer;
           }
         }
       }
     }
+
     .company_info_container {
-      border: 1px solid #b8b8b8;
+      border: 1px solid var(--txt-400);
       border-radius: 3px;
       display: flex;
       justify-content: space-around;
       color: #b8b8b8;
       margin-top: 1rem;
 
-      &:hover {
-        border: 1px solid white;
-      }
-
       a {
         margin: 5px;
-        font-size: 1rem;
+        font-size: 1.1rem;
 
         &:hover {
           color: white;

@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { BsApple, BsGithub } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 import { ToastContainer, toast } from "react-toastify";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineCloseCircle, AiOutlineGoogle } from "react-icons/ai";
 import { useSession, signIn, signOut } from "next-auth/react";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
@@ -107,12 +107,7 @@ const Login = () => {
           closeButton={CloseButton}
         />
         <div className={styles.left_container}>
-          <div className={styles.left_inner_container}>
-            <h1>Dev.Env</h1>
-            <h2>One Stop</h2>
-            <h3>for</h3>
-            <h2>Coders.</h2>
-          </div>
+
         </div>
         <div className={styles.right_container}>
           <div className={styles.login_container}>
@@ -126,7 +121,7 @@ const Login = () => {
               onChange={handleChange}
             />
             <div className={styles.password_text_container}>
-              <label>Password</label>
+              <div>Password</div>
               <Link href="/">
                 <a className={styles.link}>Forgot Password</a>
               </Link>
@@ -141,7 +136,7 @@ const Login = () => {
             <div className={styles.signup_container}>
               <p>New to Dev.Env?</p>
               <Link href="/signup">
-                <a className={styles.link}>Create an account .</a>
+                <a className={styles.link}>Create an account</a>
               </Link>
             </div>
             <div className={styles.hr_container}>
@@ -152,7 +147,7 @@ const Login = () => {
             <div className={styles.other_login_container}>
               <label>Login using</label>
               <div className={styles.icons_container}>
-                <FcGoogle
+                <AiOutlineGoogle
                   className={styles.icons}
                   size={"3.5rem"}
                   onClick={() => signIn("google")}
