@@ -21,7 +21,7 @@ const Rightbar = () => {
                     objectFit="cover"
                     alt=""
                   />
-                </div>
+    </div>
                 <div className={styles.info}>
                   <div className={styles.nameFollow + " " + styles.name}>
                     <div className={styles.name}>Noman</div>

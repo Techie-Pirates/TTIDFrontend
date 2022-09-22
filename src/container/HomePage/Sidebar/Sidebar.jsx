@@ -8,7 +8,7 @@ import { TbReportAnalytics} from "react-icons/tb";
 import Image from "next/image"
 
 const Sidebar = () => {
-  return (
+	return (
     <div className={styles.Sidebar + " sticky-top"}>
       <div className={styles.SidebarWrapper}>
         <ul className={styles.SidebarTabs}>
@@ -27,7 +27,7 @@ const Sidebar = () => {
           <li className={styles.listTab}>
             <GoBookmark /> <div className={styles.listTabText}>Bookmarks</div>
           </li>
-          
+
           {/* <li className={styles.listTab}>
             <TbReportAnalytics/> <div className={styles.listTabText}>Analytics</div>
           </li>  */}
