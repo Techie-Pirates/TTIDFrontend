@@ -1,27 +1,23 @@
 @import "/public/assets/css/variablesAndThemes/variables.scss";
 
 .Rightbar {
-    // width: 25%;
+
     min-width: 30rem;
     background: var(--txt-400);
     max-height: 30rem;
-    border-radius:25px;
+    border-radius: $br-0;
 }
 .rightCard h1 {
     margin: 2rem 0 1rem 2rem;
     
 }
-.rightCard {
-    
-    
-}
+
 
 .listRecommend{
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
     padding-left: 2rem;
 }
 
