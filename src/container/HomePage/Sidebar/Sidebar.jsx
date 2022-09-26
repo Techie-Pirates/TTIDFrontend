@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Sidebar.module.scss";
 import { HiUserGroup } from "react-icons/hi";
-import { MdOutlinePostAdd } from "react-icons/md";
 import Image from "next/image";
 
 const Sidebar = () => {
@@ -41,13 +40,7 @@ const Sidebar = () => {
           <div className={styles.listTabText}>View Later</div>
           <div className={styles.listTabValue}>7</div>
         </div>
-        <hr className={styles.partition}></hr>
-
         
-        <div className={styles.listTab + " " + styles.createPost}>
-            {/* <MdOutlinePostAdd />{" "} */}
-            <div className={styles.listTabText}>Create Post</div>
-          </div>
         
       </div>
       <div className={styles.SidebarWrapperBottom}>
