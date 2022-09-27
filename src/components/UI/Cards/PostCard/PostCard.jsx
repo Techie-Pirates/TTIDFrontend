@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './PostCard.module.scss'
 import { BsPlusSquare } from 'react-icons/bs';
 import { BiLike, BiCommentDetail } from 'react-icons/bi'
-import LimitChar from '../../../../components/UI/LimitChar/LimitChar';
+import LimitChar from '../../LimitChar/LimitChar';
 import Image from 'next/image';
-import ReadMore from '../../../../components/UI/ReadMore/ReadMore';
+import ReadMore from '../../ReadMore/ReadMore';
 
 const PostCard = () => {
 	return (
