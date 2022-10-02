@@ -1,8 +1,8 @@
 @import "/public/assets/css/variablesAndThemes/variables.scss";
 
 .Feed {
-    width: 100%;
-    max-width: 65rem;
+    width: 60%;
+    // max-width: 65rem;
     min-width: 40rem;
 
     @media screen and (max-width: $break-point-tab) {
@@ -118,5 +118,5 @@
         }
     }
 
-    
+
 }

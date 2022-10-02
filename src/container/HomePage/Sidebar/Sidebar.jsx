@@ -40,12 +40,12 @@ const Sidebar = () => {
           <div className={styles.listTabText}>View Later</div>
           <div className={styles.listTabValue}>7</div>
         </div>
-        
-        
+
+
       </div>
       <div className={styles.SidebarWrapperBottom}>
         <div className={styles.listTabBottom}>
-          Recent
+          <div className={styles.title}>Recent</div>
           <div className={styles.groupTab}>
             <div className={styles.groupIcon}><HiUserGroup /></div>
             <div className={styles.groupTabName}>SPIT Alumni Network</div>
@@ -53,7 +53,7 @@ const Sidebar = () => {
         </div>
         <hr className={styles.partition}></hr>
         <div className={styles.listTabBottom}>
-          Groups
+          <div className={styles.title}>Groups</div>
           <div className={styles.groupTab}>
             <div className={styles.groupIcon}><HiUserGroup /></div>
             <div className={styles.groupTabName}>Minion Troop</div>
@@ -67,7 +67,7 @@ const Sidebar = () => {
             <div className={styles.groupTabName}>404 Not Found</div>
           </div>
         </div>
-       
+
 
       </div>
     </div>

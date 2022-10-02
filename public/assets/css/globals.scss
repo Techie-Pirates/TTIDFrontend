@@ -40,7 +40,6 @@ body {
   // overflow-x: hidden !important;
   // overflow-y: auto !important;
   background: var(--primary-000);
-  color: var(--txt-100);
 
   @media screen and (max-width: $break-point-tab) {
     padding-top: $nav-height-sm;
