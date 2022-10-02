@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Login.module.scss";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
-import { BsApple, BsGithub } from "react-icons/bs";
+import { BsTwitter, BsGithub } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 import { ToastContainer, toast } from "react-toastify";
 import { AiOutlineCloseCircle, AiOutlineGoogle } from "react-icons/ai";
@@ -152,10 +152,10 @@ const Login = () => {
                   size={"3.5rem"}
                   onClick={() => signIn("google")}
                 />
-                <BsApple
+                <BsTwitter
                   className={styles.icons}
                   size={"3.5rem"}
-                  onClick={() => signIn("apple")}
+                  onClick={() => signIn("twitter")}
                 />
                 <GrLinkedinOption
                   className={styles.icons}
